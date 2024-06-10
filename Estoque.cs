@@ -7,11 +7,11 @@ namespace ControleEstoque
     class Estoque
 
     {
-        static List<Produto> estoque = new List<Produto>();
-        static List<Fornecedor> fornecedores = new List<Fornecedor>();
-        static List<Cliente> clientes = new List<Cliente>();
+        public List<Produto> estoque = new List<Produto>();
+        public List<Fornecedor> fornecedores = new List<Fornecedor>();
+        public List<Cliente> clientes = new List<Cliente>();
 
-        static void Main(string[] args)
+        public) void Main(string[] args)
         {
             while (true)
             {
@@ -66,7 +66,7 @@ namespace ControleEstoque
             }
         }
 
-        static void AdicionarProduto()
+        public void AdicionarProduto()
         {
             Console.WriteLine("Digite o codigo do Produto:");
             int Codigo = int.Parse(Console.ReadLine());

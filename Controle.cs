@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Controle_de_Estoque
+namespace Principal
 {
     internal class Produto
     {
-        public int id { get; set;}
+        pu)blic int id { get; set;}
         public string Nome { get; set;} 
         public int Quantidade { get; set;}
         public string Fornecedor { get; set;}
@@ -31,6 +31,39 @@ namespace Controle_de_Estoque
 
         public List<Produto> estoque = new List<Produto>();
     }
+
+public class Cliente
+{
+    public int Id { get; set; }
+    public string Nome { get; set; }
+    public string Email { get; set; }
+}
+
+public class Fornecedor
+{
+    public int Id { get; set; }
+    public string Nome { get; set; }
+    public string Telefone { get; set; }
+}
+
+public class Venda
+{
+    public int Id { get; set; }
+    public int ProdutoId { get; set; }
+    public int ClienteId { get; set; }
+    public DateTime Data { get; set; }
+    public int Quantidade { get; set; }
+}
+
+public class Compra
+{
+    public int Id { get; set; }
+    public int ProdutoId { get; set; }
+    public int FornecedorId { get; set; }
+    public DateTime Data { get; set; }
+    public int Quantidade { get; set; }
+}
+
 
     public void Main(string[] args)
     {
